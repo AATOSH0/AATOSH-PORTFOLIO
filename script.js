@@ -44,7 +44,7 @@ const loader = () => {
     setTimeout(() => {
       clearInterval(intervalID);
       root.style.display = "block";
-      loaderBOX.style.top = "-100%";
+      loaderBOX.style.top = "-200%";
     }, 2000);
   });
 };
