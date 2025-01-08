@@ -430,6 +430,7 @@ nav .nav-right a:hover::after {
   min-height: 100vh;
   width: 100%;
   background-color: #645b51;
+  overflow: hidden;
 }
 
 .page-2 h2 {
@@ -463,10 +464,6 @@ nav .nav-right a:hover::after {
 .page-2 .skills-container {
   height: 75vh;
   width: 100%;
-}
-
-.skills-container {
-  overflow: hidden;
 }
 
 .skills-container .skills {
@@ -800,6 +797,12 @@ nav .nav-right a:hover::after {
 }
 
 @media (max-width: 768px) {
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   nav .nav-right {
     display: none;
   }
@@ -840,7 +843,7 @@ nav .nav-right a:hover::after {
 
   .menu::after {
     display: none;
-  }
+  } 
 
   .navigation-container {
     left: 100%;
@@ -872,6 +875,10 @@ nav .nav-right a:hover::after {
   .menu-bar-links a {
     color: white;
     font-size: 4vh;
+  }
+
+  .nav-points a:hover::before {
+    display: none;
   }
 
   .page-1 {

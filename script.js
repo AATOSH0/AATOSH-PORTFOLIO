@@ -40,13 +40,11 @@ const loader = () => {
     }
   }, 200);
 
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      clearInterval(intervalID);
-      root.style.display = "block";
-      loaderBOX.style.top = "-200%";
-    }, 2000);
-  });
+  setTimeout(() => {
+    clearInterval(intervalID);
+    root.style.display = "block";
+    loaderBOX.style.top = "-200%";
+  }, 2000);
 };
 
 // navigation icon logic
